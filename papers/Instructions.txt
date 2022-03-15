@@ -1,0 +1,31 @@
+Brief Instructions:
+
+You need to make sure the files are in a folder that is part of the Matlab path. I think I've included all the files you need, but if MATlab asks for any more, please email me and I'll add them.
+
+I'm afraid the files are not well commented at all! To get a fit going, you need a command like this:
+
+[FinalParams LogLikelihood Deviance] = SimultaneityNoisyCriteriaMultistart( [-100 0 50 50], [100 100 50 50], [100 500 100 100], Data)
+
+The model has four parameters (low boundary, high boundary, SD of low boundary cumulative Gaussian, SD of high boundary cumulative Gaussian).
+
+When searching for best fitting parameters, it's possible to get trapped at a "local maximum" best fit which is not always the global maximum. Hence the function will initiate a Nelder-Mead search to find the best fitting model from multiple starting points. The first three arguments that are passed to the above function specify the starting points to iterate through, in the format start:step:end for each of four parameters (e.g. for parameter 1 the example above will test starting positions of -100, 0 and 100, because it starts at -100, moves up in steps of 100, and ends at 100). Hence this example actually sets in motion 3 x 6 x 2 x 2 = 72 fits, which you will see whizzing past as figures (if the option is set for that in the wrapperforfmin file) before it finally shows the best fit from any of the starting positions. If you find with your data that you are not getting good fits, you may need to adjust these values to make sure one of the iterations starts reasonably close to where you believe the best fit actually lies.
+
+The fourth argument is the data you are fitting. This needs to be a matrix with three columns and as many rows as you have test values. The first column is the test value, the second column is the proportion of times your paticipant said it was simultaneous, the third column is the number of trials presented at that test value. For example, an experiment using the method of constant stimuli with 90 trials might yield idealised data that looks like this:
+
+-200	0	10
+-150	0.1	10
+-100	0.3	10
+-50	0.8	10
+0	1.0	10
+50	0.8	10
+100	0.3	10
+150	0.1	10
+200	0	10
+
+Feel free to email me for further instructions!
+
+Best,
+
+Kielan
+
+(01/11/2012)

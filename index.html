@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS (reveal once developed...)
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  -->
+    <!--- local version-->
+    <link rel="stylesheet" href = "css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href = "css/myStyles.css">
+
+    <!--fancy font import from google> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <title>Kielan Yarrow's Academic Website</title>
+    <script src="js/myHeader.js" type="text/javascript" defer></script>
+
+  </head>
+
+  <body>
+
+     <!-- The header html is being loaded into a custom component (next line).
+    The actual html can be found (in order to change it) in the myHeader.js file, which gets included at the end of the head section above -->
+    <header-component></header-component>
+    
+    <div class="container mainImage">
+      <div class="textHoldermainImage">
+        <p class="text-start"><span class="fs-5">Hi there, I'm Kielan</span> and this is my personal academic web page. As you can see, design has never been my strong point. I work as a Reader at the Department of Psychology, City, University of London. You can find out more about me by selecting from the menu at the top of the page. Alternatively, if the look of this web page upsets you, there's a proper City-branded one <a href = "https://www.city.ac.uk/about/people/academics/kielan-yarrow" class="text-reset">here</a> (but IMO it doesn't have such funky pictures). Oh, and
+        if you prefer to see me summarised in a traditional "full academic CV", just <a href = "papers/Full academic CV.pdf" class="text-reset">click</a> to download.</p> 
+      
+        <p>My office is in the Rhind building room DG23, but I'm not there much at the moment. You can contact me by <span class="fw-bold">email: </span> <span class="fst-italic">kielan.yarrow.1 "at" city.ac.uk</span></p>
+
+        <span class="fs-5">Image:</span>     
+        <button id = "plant" type="button" class="btn btn-secondary">Yarrow (plant)</button>
+        <button id = "river" type="button" class="btn btn-secondary" >Yarrow (river)</button>
+        <button id = "duck" type="button" class="btn btn-secondary" >Yāròu (鸭肉)</button>
+
+      </div>      
+
+
+    </div>
+
+    <!--local javascript, presumably don't need jquery... -->
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+    <!-- Optional JavaScript; choose one of the two! (reveal once developed)-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper --> <!--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+-->
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="js/indexScript.js"></script>
+
+  </body>
+</html>

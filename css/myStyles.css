@@ -1,0 +1,140 @@
+body {
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: left;
+}
+
+#header-nav {
+	background-color: #6b8e23;/*#d5d4d0;*/
+	border-radius: 0;
+	border: 0;
+	height: 100px;
+	margin-bottom: 40px;
+}
+
+#logo-img {
+	/*background: url('../images/kielan_sketch.jpg') no-repeat;*/
+	width: 100px;
+	height: 113px;
+	margin: 10px 15px 10px 0;
+	border-width: 1px;
+	border-style: solid;
+	/*border-color: #808080;*/
+}
+
+.letsFloat {
+	float: left;
+}
+
+.navbar-brand h1 {
+	padding-top: 20px;
+	font-size: 1.25em;
+	line-height: 1;
+}
+
+.navbar-brand p {
+	font-size: 0.75em;
+}
+
+.nav-link {
+	padding-top: 25px;
+	font-size: 1.25em;
+	line-height: 1;
+	text-align: center;
+}
+
+.nav-item {
+	background-color: #6b8e23;	
+	z-index: 1;
+}
+
+.navbar-toggler {
+	margin-top: 20px;
+}
+
+
+
+/* HOME PAGE */
+.mainImage {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+/********** XXLarge devices only **********/
+@media (min-width: 1400px) {
+  .mainImage {
+    background: url('../images/YarrowBackdropplant1320x743.jpg') no-repeat;
+    height: 743px;
+  }
+}
+
+/********** XLarge devices only **********/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainImage {
+    background: url('../images/YarrowBackdropplant1140x642.jpg') no-repeat;
+    height: 642px;
+  }
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainImage {
+    background: url('../images/YarrowBackdropplant960x541.jpg') no-repeat;
+    height: 541px;
+  }
+}
+
+/********** medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainImage {
+    background: url('../images/YarrowBackdropplant720x406.jpg') no-repeat;
+    height: 406px;
+  }
+}
+
+/********** XLarge devices only **********/
+@media (max-width: 767px) {
+  .mainImage {
+    background: url('../images/YarrowBackdropplant540x305.jpg') no-repeat;
+    height: 305px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainImage {
+    width: 540px; 
+  }
+}
+
+.textHoldermainImage {
+	width: 400px;
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+	top: 12px;
+	background-color: #6b8e23;
+	padding: 10px 15px 10px 15px;
+	opacity: 0.9;
+}
+
+ol {
+	margin-top: 30px;
+}
+
+ol > li {
+  line-height: 1.2;
+}
+
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+.headShot {
+	margin-bottom: 20px;
+}
