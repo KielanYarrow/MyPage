@@ -11,7 +11,7 @@ connectedCallback() {
         <div class="container">
           
           <a href="index.html" class="navbar-brand d-none d-sm-block letsFloat">
-            <img src="images/kielan_sketch.jpg" id = "logo-img" alt="Logo image">            
+            <img src="images/Kielan_sketch.jpg" id = "logo-img" alt="Logo image">            
           </a>
           <a href="index.html" class="navbar-brand letsFloat">          
             <h1>Kielan Yarrow's Academic Website</h1>
