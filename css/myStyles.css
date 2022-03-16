@@ -21,7 +21,7 @@ body {
 	/*background: url('../images/kielan_sketch.jpg') no-repeat;*/
 	width: 100px;
 	height: 113px;
-	margin: 10px 15px 10px 0;
+	margin: 10px 15px 0px 0;
 	border-width: 1px;
 	border-style: solid;
 	/*border-color: #808080;*/
@@ -112,14 +112,15 @@ body {
 }
 
 .textHoldermainImage {
-	width: 400px;
+	/*width: 400px;*/
 	border-style: solid;
 	border-width: 1px;
 	position: relative;
 	top: 12px;
 	background-color: #6b8e23;
-	padding: 10px 15px 10px 15px;
+	padding: 0px 15px 10px 15px;
 	opacity: 0.9;
+	margin-left: 10px;
 }
 
 ol {
@@ -137,4 +138,9 @@ ol > li::marker {
 
 .headShot {
 	margin-bottom: 20px;
+}
+
+.btn-secondary {
+	padding-right: 10px;
+	padding-left: 10px;
 }
