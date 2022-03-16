@@ -65,6 +65,18 @@ body {
   border: 2px solid #3F0C1F;
 }
 
+.textHoldermainImage {
+	/*width: 400px;*/
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+	top: 10px;
+	background-color: #6b8e23;
+	padding: 6px 15px 10px 15px;
+	opacity: 0.9;
+	margin-left: 10px;
+}
+
 /********** XXLarge devices only **********/
 @media (min-width: 1400px) {
   .mainImage {
@@ -109,18 +121,9 @@ body {
   .mainImage {
     width: 540px; 
   }
-}
-
-.textHoldermainImage {
-	/*width: 400px;*/
-	border-style: solid;
-	border-width: 1px;
-	position: relative;
-	top: 12px;
-	background-color: #6b8e23;
-	padding: 0px 15px 10px 15px;
-	opacity: 0.9;
-	margin-left: 10px;
+  .textHoldermainImage {
+  	top: 70px;
+  }
 }
 
 ol {
