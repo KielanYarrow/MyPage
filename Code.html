@@ -20,7 +20,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 
-    <title>Kielan Yarrow's shared code</title>
+    <title>Kielan Yarrow's shared code and models</title>
     <script src="js/myHeader.js" type="text/javascript" defer></script>
 
   </head>
@@ -33,21 +33,25 @@
     
     <div class="container">      
       <p>
-        <span class="fs-5">I am an enthusiatic but amateurish coder and modeller.</span> Most of the stuff I create services my own immediate research needs, but very occassionally I code something that might be helpful to other people and therefore worth sharing. The best example is a suite of Matlab functions created to fit curves to data from relative-timing tasks such as the simultaneity judgement:
+        <span class="fs-5">I am an enthusiatic but amateurish coder and modeller.</span> Most of the stuff I create services my own immediate research needs, but very occassionally I code something that might be helpful to other people and therefore worth sharing. The best example is a suite of functions created to fit curves to data from relative-timing tasks such as the simultaneity judgement:
       </p>
       <div class="row">
         <div class="col-12 col-lg-6 col-xxl-4 headShot"><img src = "images/SJ.jpg" alt = "SJ task"></div>
         <div class="col-12 col-lg-6 col-xxl-4 headShot"><img src = "images/2xSJ.jpg" alt = "Two-interval SJ task"></div>    
-        <div class="col-12 col-lg-6 col-xxl-4 headShot"><img src = "images/TOJ.jpg" alt = "TOJ task"></div>       
+        <div class="col-12 col-lg-6 col-xxl-4 headShot"><img src = "images/TOJ.jpg" alt = "TOJ task"></div> 
+        <div class="col-12 col-lg-6 col-xxl-4 headShot"><iframe id="SJ GUI" src="https://kielan.shinyapps.io/sj_noisycriteria/" style="border: none; width: 440px; height: 470px" frameborder="0"></iframe></div> 
+        <div class="col-12 col-lg-6 col-xxl-4 headShot"><iframe id="SJ GUI2" src="https://kielan.shinyapps.io/sj_ELA/" style="border: none; width: 440px; height: 470px" frameborder="0"></iframe></div>  
+        <div class="col-12 col-lg-6 col-xxl-4 headShot"><iframe id="SJ GUI3" src="https://kielan.shinyapps.io/sj_MCD/" style="border: none; width: 440px; height: 470px" frameborder="0"></iframe></div>   
       </div>
       <p> Although there are lots of freeware options out there if you want to fit sigmoidal curves to binary judgements, there are fewer options if you want to fit data from tasks where the likelihood of making one category of judgement (such as "simultaneous") goes up and then comes back down again (or vice versa) as the stimulus changes. In particular, it's hard to find an option that is justified by a formal model of what the observer might be doing.</p>
-      <p>If you want something like that, try downloading <a href = "papers/sim_model.zip">this.</a> There's a readme, and the key functions have a fair bit of text in response to the help command. Further details can be found in these papers (and some older ones which they cite):</p>
+      <p>If you want something like that, and have access to Matlab, try downloading <a href = "papers/sim_model.zip">this.</a> These functions implement a model which I've recently been calling GLINC (Gaussian Latency Independent Noisy Criteria) for SJs, and also models from the same conceptual family for 2xSJs, TOJs, symmetric SJs etc. They are fitted (based on maximum likelihood) to each participant separately, so that parameters can be obtained and used in subsequent group-level analyses. There's a readme, and the key functions have a fair bit of text in response to the help command. Further details can be found in these papers (and some older ones which they cite):</p>
       <ol>
         <li> Yarrow, K. <a href = "papers/SJ_Tutorial.pdf">Collecting and Interpreting Judgments about Perceived Simultaneity: A Model-Fitting Tutorial.</a> In A. Vatakis, F. Balci, M. Di Luca, Á. Correa (Eds.) <i>Timing and Time Perception: Procedures, Measures, and Applications.</i> Leiden: Brill (2018).<br>
 
         <li> Yarrow, K., Martin, S.E., Di Costa, S., Solomon, J.A., & Arnold, D.H. <a href = "http://journal.frontiersin.org/article/10.3389/fpsyg.2016.00416/full">A roving dual-presentation simultaneity-judgment task to estimate the point of subjective simultaneity.</a> <i>Frontiers in Psychology</i>, 7:416. (2016)<br>
 
       </ol>
+      <p>More recently, I've been working with Bayesian multilevel versions of three different SJ models (the one I've published, above, and a couple of alternatives from other authors). I've been doing this in R, using rstan and stan - all freeware. You can (hopefully) play with these models in the GUIs above. I'll put a publication here (and the code) when something is out, but until then feel free to email me if this kind of analysis appeals to you.</p>
       <br>
 
       
