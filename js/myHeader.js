@@ -15,7 +15,7 @@ connectedCallback() {
           </a>
           <a href="index.html" class="navbar-brand letsFloat">          
             <h1>Kielan Yarrow's Academic Website</h1>
-            <p>Certified "Not Professionally designed" &copy; 2022</p>
+            <p>Certified "Not Professionally Designed" &copy; 2022</p>
           </a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
