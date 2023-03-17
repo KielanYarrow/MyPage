@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'yanone kaffeesatz';
+    src:url('fonts/yanonekaffeesatz-regular.ttf') format('truetype'),
+         url('fonts/yanonekaffeesatz-regular-webfont.woff2') format('woff2'),
+         url('fonts/yanonekaffeesatz-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
 	/* font-family: Arial, Helvetica, sans-serif; */
 	font-family: 'Yanone Kaffeesatz', sans-serif;
