@@ -15,10 +15,10 @@
 
     <link rel="stylesheet" href = "css/myStyles.css">
 
-    <!--fancy font import from google> 
+    <!--fancy font import from google> -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet"> -->
+      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet"> 
 
     <title>Kielan Yarrow's shared code and models</title>
     <script src="js/myHeader.js" type="text/javascript" defer></script>
@@ -44,10 +44,11 @@
         <div class="col-12 col-lg-6 col-xxl-4 headShot"><iframe id="SJ GUI3" src="https://kielan.shinyapps.io/sj_MCD/" style="border: none; width: 440px; height: 470px" frameborder="0"></iframe></div>   
       </div>
       <p> Although there are lots of freeware options out there if you want to fit sigmoidal curves to binary judgements, there are fewer options if you want to fit data from tasks where the likelihood of making one category of judgement (such as "simultaneous") goes up and then comes back down again (or vice versa) as the stimulus changes. In particular, it's hard to find an option that is justified by a formal model of what the observer might be doing.</p>
-      <p>If you want something like that, most recently I've been working with Bayesian multilevel versions of three different SJ models (one that I've worked with a fair bit before, see next section, and a couple of alternatives from other authors). I've been doing this in R, using rstan and stan - all freeware. You can (hopefully) play with these models in the three GUIs (second row of graphs) above. I'll put a better reference here (and the code) as soon as something is out, but until then feel free to email me if this kind of analysis appeals to you.</p>      
+      <p>If you want something like that, most recently I've been working with Bayesian multilevel versions of three different simultaneity judgement models (one that I've worked with a fair bit before, see next section, and a couple of alternatives from other authors). I've been doing this in R, using rstan and stan - all freeware. You can (hopefully) play with these models in the three GUIs (second row of graphs) above. Here's the reference:</p>      
       <ol>
-        <li> Yarrow, K., Solomon, J., Arnold D.H. & Roseboom, W. (In preparation). Multilevel modelling of simultaneity judgements discriminates between observer models and reveals how participants’ strategy influences the window of subjective synchrony.<i></i><br>     
+        <li> Yarrow, K., Solomon, J.A., Arnold, D.H., Roseboom, W. <a href = "papers/StrategyAffectsSJWidth.pdf">The best fitting of three contemporary observer models reveals how participants’ strategy influences the window of subjective synchrony.</a> <i>Journal of Experimental Psychology: Human Perception & Performance.</i> (in press).<br>     
       </ol>      
+      <p>You can find the data and code used in this paper <a href = "https://city.figshare.com/articles/software/Code_and_data_accompanying_The_best_fitting_of_three_contemporary_observer_models_reveals_how_participants_strategy_influences_the_window_of_subjective_synchrony_/20495652">here</a>. Feel free to contact me if you want to fit one of these models and need some help.</p>
       <p>Alternatively, if you have access to Matlab, and don't fancy working with multilevel models (or want to model a slightly wider range of tasks) try downloading <a href = "papers/sim_model.zip">this</a>. These functions implement a model which I've recently been calling GLINC or (most recently) AT-A-GLANCE (Approximation To A Gaussian Latency And Noisy Criteria Equation) for intermodal SJs. They also implement several other models from the same conceptual family, for 2xSJs, TOJs, symmetric (e.g. intramodal) SJs etc. They are fitted (based on maximum likelihood) to each participant separately, so that parameters can be obtained and used in subsequent group-level analyses. There's a readme, and the key functions have a fair bit of text in response to the help command. Further details can be found in these papers (and some older ones which they cite):</p>      
       <ol>
         <li> Yarrow, K. <a href = "papers/SJ_Tutorial.pdf">Collecting and Interpreting Judgments about Perceived Simultaneity: A Model-Fitting Tutorial.</a> In A. Vatakis, F. Balci, M. Di Luca, Á. Correa (Eds.) <i>Timing and Time Perception: Procedures, Measures, and Applications.</i> Leiden: Brill (2018).<br>
